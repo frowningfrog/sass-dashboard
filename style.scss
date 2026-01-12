@@ -1,5 +1,23 @@
-$primary-color: green;
+$first-color: teal;
+$second-color: black;
 
-h1 {
-    color: $primary-color;
+header {
+    display: flex;
+    background-color: $first-color;
+    justify-content: space-around;
+}
+header h1 {
+    color: $second-color;
+}
+#menu {
+    padding-top: 1.6em;
+}
+#menu a {
+    text-decoration: none;
+    color: $second-color;
+    font-size: 20px;
+}
+#space {
+    padding-left: 1em;
+    padding-right: 1em;
 }

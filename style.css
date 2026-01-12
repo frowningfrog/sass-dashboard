@@ -1,3 +1,24 @@
-h1 {
-  color: green;
+header {
+  display: flex;
+  background-color: teal;
+  justify-content: space-around;
+}
+
+header h1 {
+  color: black;
+}
+
+#menu {
+  padding-top: 1.6em;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+#space {
+  padding-left: 1em;
+  padding-right: 1em;
 }/*# sourceMappingURL=style.css.map */
