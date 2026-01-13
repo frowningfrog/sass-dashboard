@@ -1,8 +1,4 @@
-$first-color: teal;
-$second-color: black;
-$third-color: yellowgreen;
-
-$font: "Georgia";
+@import 'vars';
 
 body {
     margin: 0;
@@ -13,20 +9,23 @@ header {
     background-color: $first-color;
     justify-content: space-around;
 }
-header h1 {
+header a {
     color: $second-color;
+    text-decoration: none;
 }
 #sidebar {
-    width: 12em;
+    width: $space*4;
+    min-width: 9em;
     text-align: center;
-    margin-top: 12vh;
+    margin-top: $space;
 }
 #sidebar button {
     background-color: $first-color;
     font-family: $font;
-    margin: 6vh;
+    margin-top: $space;
+    margin-bottom: $space;
     width: 100%;
-    height: 10vh;
+    height: $space*2;
     border-radius: 2em;
     font-size: 1.5em;
     border: none;
@@ -36,4 +35,14 @@ header h1 {
     background-color: $third-color;
     color: $first-color;
     cursor: pointer;
+}
+#main {
+    display: flex;
+}
+.frame {
+    margin: auto;
+    max-width: 70%;
+    min-width: 50%;
+    border-block-style: solid;
+    text-align: center;
 }
