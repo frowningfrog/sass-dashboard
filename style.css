@@ -16,7 +16,7 @@ header a {
 
 #sidebar {
   width: 24vh;
-  min-width: 9em;
+  min-width: 24vh;
   text-align: center;
   margin-top: 6vh;
 }
@@ -34,7 +34,7 @@ header a {
 }
 
 #sidebar button:hover {
-  background-color: purple;
+  background-color: yellowgreen;
   color: teal;
   cursor: pointer;
 }
@@ -45,8 +45,13 @@ header a {
 
 .frame {
   margin: auto;
-  max-width: 70%;
-  min-width: 50%;
-  border-block-style: solid;
+}
+
+.frame div {
+  margin: 6vh;
+  border-style: solid;
   text-align: center;
+  border-radius: 2em;
+  padding: 1em;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

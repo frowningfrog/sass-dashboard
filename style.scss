@@ -15,7 +15,7 @@ header a {
 }
 #sidebar {
     width: $space*4;
-    min-width: 9em;
+    min-width: $space*4;
     text-align: center;
     margin-top: $space;
 }
@@ -41,8 +41,12 @@ header a {
 }
 .frame {
     margin: auto;
-    max-width: 70%;
-    min-width: 50%;
-    border-block-style: solid;
+}
+.frame div {
+    margin: $space;
+    border-style: solid;
     text-align: center;
+    border-radius: 2em;
+    padding: 1em;
+    justify-content: space-between;
 }
