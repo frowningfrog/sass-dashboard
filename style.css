@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  font-family: "Georgia";
+}
+
 header {
   display: flex;
   background-color: teal;
@@ -8,17 +13,24 @@ header h1 {
   color: black;
 }
 
-#menu {
-  padding-top: 1.6em;
+#sidebar {
+  width: 20vw;
+  text-align: center;
 }
 
-#menu a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
+#sidebar button {
+  background-color: teal;
+  font-family: "Georgia";
+  width: 100%;
+  height: 10vh;
+  margin-top: 3vh;
+  border-radius: 2em;
+  font-size: 2.75vw;
+  border: none;
 }
 
-#space {
-  padding-left: 1em;
-  padding-right: 1em;
+#sidebar button:hover {
+  background-color: yellowgreen;
+  color: teal;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
