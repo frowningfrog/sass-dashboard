@@ -12,6 +12,7 @@ header {
 header a {
     color: $second-color;
     text-decoration: none;
+    font-size: 1.75em;
 }
 #sidebar {
     width: $space*4;
@@ -25,9 +26,9 @@ header a {
     margin-top: $space;
     margin-bottom: $space;
     width: 100%;
-    height: $space*2;
+    height: $space;
     border-radius: 2em;
-    font-size: 1.5em;
+    font-size: 2em;
     border: none;
     
 }
@@ -49,4 +50,5 @@ header a {
     border-radius: 2em;
     padding: 1em;
     justify-content: space-between;
+    font-size: 1.5em;
 }
