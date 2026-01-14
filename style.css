@@ -9,28 +9,23 @@ header {
   justify-content: space-around;
 }
 
-header a {
+a {
   color: #000000;
   text-decoration: none;
   font-size: 1.75em;
 }
 
-#sidebar {
-  width: 24vh;
-  min-width: 24vh;
-  text-align: center;
-  margin-top: 6vh;
-}
-
 #sidebar button {
+  display: block;
   background-color: #4fa500;
   font-family: "Georgia";
   margin-top: 6vh;
   margin-bottom: 6vh;
-  width: 100%;
-  height: 6vh;
+  margin-right: 0;
+  width: 6em;
+  height: 2em;
   border-radius: 2em;
-  font-size: 2em;
+  font-size: 36px;
   border: none;
 }
 
@@ -39,20 +34,38 @@ header a {
   cursor: pointer;
 }
 
-#main {
+.frame {
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
-.frame {
-  margin: auto;
+.frame div {
+  padding: 1em;
+  font-size: 1.5em;
 }
 
-.frame div {
-  margin: 6vh;
-  border-style: solid;
-  text-align: center;
-  border-radius: 2em;
-  padding: 1em;
-  justify-content: space-between;
-  font-size: 1.5em;
+.text {
+  margin-top: 1em;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 42px;
+  }
+  .frame {
+    display: block;
+  }
+  #sidebar {
+    display: flex;
+    margin-left: -4vw;
+  }
+  #sidebar button {
+    width: 33vw;
+    font-size: 32px;
+    margin: 0;
+  }
+  .text {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
