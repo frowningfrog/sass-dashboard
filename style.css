@@ -5,12 +5,12 @@ body {
 
 header {
   display: flex;
-  background-color: teal;
+  background-color: #4fa500;
   justify-content: space-around;
 }
 
 header a {
-  color: black;
+  color: #000000;
   text-decoration: none;
   font-size: 1.75em;
 }
@@ -23,7 +23,7 @@ header a {
 }
 
 #sidebar button {
-  background-color: teal;
+  background-color: #4fa500;
   font-family: "Georgia";
   margin-top: 6vh;
   margin-bottom: 6vh;
@@ -35,8 +35,7 @@ header a {
 }
 
 #sidebar button:hover {
-  background-color: yellowgreen;
-  color: teal;
+  background-color: #4bad71;
   cursor: pointer;
 }
 
