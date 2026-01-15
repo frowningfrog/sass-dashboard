@@ -25,8 +25,8 @@ a {
   display: block;
   background-color: #4fa500;
   font-family: "Georgia";
-  margin-top: 6vh;
-  margin-bottom: 6vh;
+  margin-top: 1em;
+  margin-bottom: 1em;
   width: 8em;
   height: 2em;
   border-radius: 2em;
@@ -40,14 +40,15 @@ a {
 }
 
 .frame {
-  margin: 0;
+  margin-left: 6em;
+  margin-right: 6em;
   padding: 0;
   display: flex;
 }
 
 .frame div {
   padding: 1em;
-  font-size: 1.5em;
+  font-size: 20px;
 }
 
 .text {
@@ -61,6 +62,7 @@ a {
     padding: 12px;
   }
   .frame {
+    margin: 0;
     display: block;
     padding: 0;
   }
@@ -78,8 +80,10 @@ a {
     font-size: 22px;
   }
   .frame .text {
-    font-size: 1em;
-    margin: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
     padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
