@@ -3,6 +3,12 @@
 body {
     margin: 0;
     font-family: $font;
+    background-image: url("res/bg.png");
+    background-repeat: repeat-x;
+    background-color: $bg;
+}
+h1 {
+    font-size: 32px;
 }
 header {
     display: flex;
@@ -12,7 +18,6 @@ header {
 a {
     color: $second-color;
     text-decoration: none;
-    font-size: 1.75em;
 }
 #sidebar button {
     display: block;
@@ -20,11 +25,10 @@ a {
     font-family: $font;
     margin-top: $space;
     margin-bottom: $space;
-    margin-right: 0;
-    width: 6em;
+    width: 8em;
     height: 2em;
     border-radius: 2em;
-    font-size: 36px;
+    font-size: 30px;
     border: none;
 }
 #sidebar button:hover {
@@ -43,22 +47,32 @@ a {
 .text {
     margin-top: 1em;
 }
-@media (max-width: 1200px) {
+@media (max-width: 640px) and (max-height: 1000px){
     h1 {
-        font-size: 42px;
+        font-size: 32px;
+        margin: 0;
+        padding: 12px;
     }
     .frame {
         display: block;
+        padding: 0;
     }
     #sidebar {
+        margin: 0;
+        padding: 0;
+        padding-left: 6px;
+        padding-right: 6px;
+        justify-content: space-around;
         display: flex;
     }
-    #sidebar button {
-        width: 30vw;
-        font-size: 24px;
-        margin: 3px;
+    #sidebar a button {
+        padding: 0;
+        width: 122px;
+        font-size: 22px;
     }
-    .text {
-        margin: 0;
+    .frame .text {
+        font-size: 1em;
+        margin: 1em;
+        padding: 0;
     }
 }
