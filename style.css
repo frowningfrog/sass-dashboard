@@ -1,29 +1,50 @@
 body {
   margin: 0;
   font-family: "Georgia";
-  background-image: url("res/bg.png");
-  background-repeat: repeat-x;
-  background-color: #c9fff6;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(30deg, #1e694b 0%, #97ca3d 100%);
 }
 
-h1 {
-  font-size: 32px;
+#dash {
+  width: 75%;
+}
+
+#logo {
+  width: 16em;
 }
 
 header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #1e694b;
+  text-align: center;
+  border-radius: 24px 24px 0 0;
+}
+
+.frame {
+  height: 60vh;
   display: flex;
-  background-color: #4fa500;
-  justify-content: space-around;
+  background-image: url("res/bg.png");
+  background-size: auto 100%;
+  background-size: contain;
+  border-radius: 0 0 24px 24px;
+}
+
+.frame div {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 a {
-  color: #000000;
+  color: #1e694b;
   text-decoration: none;
 }
 
 #sidebar button {
   display: block;
-  background-color: #4fa500;
+  background-color: #00b201;
   font-family: "Georgia";
   margin-top: 1em;
   margin-bottom: 1em;
@@ -35,27 +56,26 @@ a {
 }
 
 #sidebar button:hover {
-  background-color: #4bad71;
+  background-color: #edff05;
   cursor: pointer;
 }
 
-.frame {
-  margin-left: 6em;
-  margin-right: 6em;
-  padding: 0;
-  display: flex;
-}
-
-.frame div {
-  padding: 1em;
-  font-size: 20px;
-}
-
 .text {
+  display: block;
   margin-top: 1em;
+  font-size: 24px;
+  padding: 1em;
+  background-color: #97ca3d;
 }
 
 @media (max-width: 640px) and (max-height: 1000px) {
+  body {
+    margin: 0;
+  }
+  #dash {
+    width: 100vw;
+    margin: 0;
+  }
   h1 {
     font-size: 32px;
     margin: 0;
@@ -63,27 +83,20 @@ a {
   }
   .frame {
     margin: 0;
-    display: block;
     padding: 0;
+    display: block;
   }
   #sidebar {
     margin: 0;
-    padding: 0;
-    padding-left: 6px;
-    padding-right: 6px;
-    justify-content: space-around;
+    padding-bottom: 0;
     display: flex;
+    justify-content: space-between;
   }
   #sidebar a button {
+    margin: 0;
     padding: 0;
-    width: 122px;
-    font-size: 22px;
-  }
-  .frame .text {
-    margin-top: 0;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 0;
+    margin-top: 1em;
+    width: 27vw;
+    font-size: 19px;
   }
 }/*# sourceMappingURL=style.css.map */
