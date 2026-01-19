@@ -12,7 +12,7 @@ body {
     width: 75%;
 }
 #logo {
-    width: 16em;
+    width: 12em;
 }
 header {
     padding-top: 6px;
@@ -37,32 +37,50 @@ a {
     color: $second-color;
     text-decoration: none;
 }
-#sidebar button {
+.menu {
     display: block;
+}
+.nav {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.nav a {
+    display: block;
+}
+#sidebar button {
     background-color: $first-color;
     font-family: $font;
+    margin: 0;
     margin-top: $space;
-    margin-bottom: $space;
-    width: 8em;
+    width: 6em;
     height: 2em;
     border-radius: 2em;
     font-size: 30px;
     border: none;
+}
+#drop {
+    width: 3em;
 }
 #sidebar button:hover {
     background-color: $bg;
     cursor: pointer;
 }
 .text {
-    display: block;
+    display: flex;
+    justify-content: right;
     margin-top: 1em;
     font-size: 24px;
     padding: 1em;
     background-color: $third-color;
 }
+.menu:hover .nav {
+    display: block;
+}
 @media (max-width: 640px) and (max-height: 1000px){
     body {
         margin: 0;
+        display: block;
     }
     #dash {
         width: 100vw;
@@ -81,7 +99,6 @@ a {
     #sidebar {
         margin: 0;
         padding-bottom: 0;
-        display: flex;
         justify-content: space-between;
     }
     #sidebar a button {
