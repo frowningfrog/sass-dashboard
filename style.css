@@ -123,4 +123,10 @@ a {
     height: 84.5vh;
     display: block;
   }
+  .frame div {
+    padding-top: 1em;
+  }
+  .text {
+    margin: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
