@@ -16,11 +16,13 @@ body {
 }
 
 header {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 1em;
+  padding-left: 3em;
+  padding-right: 9em;
   background-color: #1e694b;
-  text-align: center;
   border-radius: 24px 24px 0 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .frame {
@@ -56,20 +58,28 @@ a {
   display: block;
 }
 
-#sidebar button {
+.nav button {
   background-color: #00b201;
   font-family: "Georgia";
   margin: 0;
-  margin-top: 6px;
-  width: 5em;
   height: 2em;
   border-radius: 2em;
-  font-size: 30px;
   border: none;
+  width: 5em;
+  margin-top: 12px;
+  font-size: 30px;
 }
 
 #drop {
-  width: 3em;
+  background-color: #00b201;
+  font-family: "Georgia";
+  margin: 0;
+  height: 2em;
+  border-radius: 2em;
+  border: none;
+  width: 4em;
+  margin-top: 24px;
+  font-size: 24px;
 }
 
 #sidebar button:hover {
@@ -79,7 +89,6 @@ a {
 
 .text {
   display: flex;
-  justify-content: right;
   margin-top: 1em;
   font-size: 24px;
   padding: 1em;
@@ -95,14 +104,18 @@ a {
     margin: 0;
     display: block;
   }
+  header {
+    padding: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 3em;
+  }
+  #drop {
+    width: 2em;
+  }
   #dash {
     width: 100vw;
     margin: 0;
-  }
-  h1 {
-    font-size: 32px;
-    margin: 0;
-    padding: 12px;
   }
   .frame {
     margin: 0;

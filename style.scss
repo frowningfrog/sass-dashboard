@@ -15,11 +15,13 @@ body {
     width: 12em;
 }
 header {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 1em;
+    padding-left: 3em;
+    padding-right: 9em;
     background-color: $second-color;
-    text-align: center;
     border-radius: 24px 24px 0 0;
+    display: flex;
+    justify-content: space-between;
 }
 .frame {
     height: 60vh;
@@ -48,19 +50,25 @@ a {
 .nav a {
     display: block;
 }
-#sidebar button {
+@mixin bttnstyle {
     background-color: $first-color;
     font-family: $font;
     margin: 0;
-    margin-top: $space;
-    width: 5em;
     height: 2em;
     border-radius: 2em;
-    font-size: 30px;
     border: none;
 }
+.nav button {
+    @include bttnstyle;
+    width: 5em;
+    margin-top: $space;
+    font-size: 30px;
+}
 #drop {
-    width: 3em;
+    @include bttnstyle;
+    width: 4em;
+    margin-top: $space*2;
+    font-size: 24px;
 }
 #sidebar button:hover {
     background-color: $bg;
@@ -68,7 +76,6 @@ a {
 }
 .text {
     display: flex;
-    justify-content: right;
     margin-top: 1em;
     font-size: 24px;
     padding: 1em;
@@ -82,14 +89,18 @@ a {
         margin: 0;
         display: block;
     }
+    header {
+        padding: 0;
+        padding-top: 1em;
+        padding-left: 1em;
+        padding-right: 3em;
+    }
+    #drop {
+        width: 2em;
+    }
     #dash {
         width: 100vw;
         margin: 0;
-    }
-    h1 {
-        font-size: 32px;
-        margin: 0;
-        padding: 12px;
     }
     .frame {
         margin: 0;
