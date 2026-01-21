@@ -1,16 +1,16 @@
-@import 'vars';
+@use 'vars' as v;
 
 body {
     margin: 0;
-    font-family: $font;
+    font-family: v.$font;
     display: grid;
     place-items: center;
     height: 100vh;
-    background: linear-gradient(30deg, $second-color 0%, $third-color 100%);
+    background: linear-gradient(30deg, v.$second-color 0%, v.$third-color 100%);
 }
 #dash {
     width: 75%;
-    filter: $drop;
+    filter: v.$drop;
 }
 #logo {
     width: 12em;
@@ -19,7 +19,7 @@ header {
     padding-top: 1em;
     padding-left: 3em;
     padding-right: 9em;
-    background-color: $second-color;
+    background-color: v.$second-color;
     border-radius: 24px 24px 0 0;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ header {
     padding-right: 1em;
 }
 a {
-    color: $second-color;
+    color: v.$second-color;
     text-decoration: none;
 }
 .menu {
@@ -52,8 +52,8 @@ a {
     @extend .menu;
 }
 @mixin bttnstyle {
-    background-color: $first-color;
-    font-family: $font;
+    background-color: v.$first-color;
+    font-family: v.$font;
     margin: 0;
     height: 2em;
     border-radius: 2em;
@@ -62,17 +62,17 @@ a {
 .nav button {
     @include bttnstyle;
     width: 5em;
-    margin-top: $space;
+    margin-top: v.$space;
     font-size: 30px;
 }
 #drop {
     @include bttnstyle;
     width: 4em;
-    margin-top: $space*2;
+    margin-top: v.$space*2;
     font-size: 24px;
 }
 #sidebar button:hover {
-    background-color: $bg;
+    background-color: v.$bg;
     cursor: pointer;
 }
 .text {
@@ -80,7 +80,7 @@ a {
     margin-top: 1em;
     font-size: 24px;
     padding: 1em;
-    background-color: $third-color;
+    background-color: v.$third-color;
 }
 .menu:hover .nav {
     @extend .menu;
