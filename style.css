@@ -44,7 +44,7 @@ a {
   text-decoration: none;
 }
 
-.menu {
+.menu, .menu:hover .nav, .nav a:hover .nav, .nav a {
   display: block;
 }
 
@@ -52,10 +52,6 @@ a {
   display: none;
   position: absolute;
   z-index: 1;
-}
-
-.nav a {
-  display: block;
 }
 
 .nav button {
@@ -93,10 +89,6 @@ a {
   font-size: 24px;
   padding: 1em;
   background-color: #97ca3d;
-}
-
-.menu:hover .nav {
-  display: block;
 }
 
 @media (max-width: 640px) and (max-height: 960px) {

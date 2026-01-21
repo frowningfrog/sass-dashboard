@@ -48,7 +48,7 @@ a {
     z-index: 1;
 }
 .nav a {
-    display: block;
+    @extend .menu;
 }
 @mixin bttnstyle {
     background-color: $first-color;
@@ -82,7 +82,7 @@ a {
     background-color: $third-color;
 }
 .menu:hover .nav {
-    display: block;
+    @extend .menu;
 }
 @media (max-width: 640px) and (max-height: 960px){
     body {
