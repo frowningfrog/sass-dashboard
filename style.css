@@ -9,6 +9,7 @@ body {
 
 #dash {
   width: 75%;
+  filter: drop-shadow(12px 12px 12px #1e694b);
 }
 
 #logo {

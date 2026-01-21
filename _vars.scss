@@ -3,5 +3,6 @@ $second-color: #1e694b;
 $third-color: #97ca3d;
 $bg: #edff05;
 $space: 12px;
+$drop: drop-shadow($space $space $space $second-color);
 
 $font: "Georgia";
